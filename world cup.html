@@ -1,0 +1,251 @@
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Landing Page</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+        /* CSS Dasar */
+        body, html {
+            margin: 0;
+            padding: 0;
+            font-family: Arial, sans-serif;
+            text-align: center;
+        }
+
+        header, footer {
+            padding: 20px 0;
+        }
+
+        main {
+            padding: 20px;
+        }
+
+        /* Carousel */
+        .carousel {
+            position: relative;
+            width: 85%;
+            max-width: 600px;
+            margin: 0 auto;
+            overflow: hidden;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+            background-position: center;
+        }
+
+        .carousel-images {
+            display: flex;
+            transition: transform 0.5s ease;
+            background-position: center;
+        }
+
+        .carousel-image {
+            min-width: 100%;
+            height: 500px;
+            background-size: cover;
+            background-position: center;
+        }
+
+        .carousel-buttons {
+            position: absolute;
+            top: 50%;
+            width: 100%;
+            display: flex;
+            justify-content: space-between;
+            transform: translateY(-50%);
+        }
+
+        .carousel-button {
+            background-color: rgba(0, 0, 0, 0.5);
+            border: none;
+            padding: 10px;
+            cursor: pointer;
+        }
+
+        .carousel-button:hover {
+            background-color: rgba(0, 0, 0, 0.8);
+        }
+        /* CARD */
+        .card {
+          box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+          transition: 0.3s;
+          width: 95%;
+        }
+
+        .card:hover {
+          box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+        }
+
+        .container {
+          padding: 2px 16px;
+        }
+        /* Styling untuk navbar */
+        .navbar {
+          background-color: #333;
+          overflow: hidden;
+        }
+
+        .navbar a {
+          float: left;
+          display: block;
+          color: #f2f2f2;
+          text-align: center;
+          padding: 14px 16px;
+          text-decoration: none;
+        }
+
+        .navbar a:hover {
+          background-color: antiquewhite;
+          color: black;
+        }
+        .navbar {
+          background-color: #333;
+          overflow: hidden;
+          display: flex;
+          justify-content: center; /* Untuk memusatkan navbar */
+        }
+
+        .navbar a {
+          display: block;
+          text-align: center;
+          padding: 14px 16px;
+          text-decoration: none;
+        }
+
+        .navbar a:hover {
+          color: black;
+        }
+        .navbar {
+          background-color: cornflowerblue;
+          overflow: hidden;
+          display: flex;
+          justify-content: left;
+          position: fixed; /* Agar navbar tetap di atas saat scroll */
+          top: 0; /* Menempel di bagian atas */
+          width: 100%; /* Lebar penuh layar */
+          z-index: 1000; /* Di atas elemen lain */
+        }
+
+        /* Memberi ruang agar konten tidak tertutup oleh navbar */
+        body {
+          margin-top: 50px;
+        }
+
+        .navbar a {
+          display: block;
+          text-align: center;
+          padding: 14px 16px;
+          text-decoration: none;
+        }
+
+        .navbar a:hover {
+          color: black;
+        }
+
+    </style>
+</head>
+<body>
+   <center> 
+         
+       <div class="navbar">
+           <img src="https://digitalhub.fifa.com/transform/befe3a64-328b-453c-8b58-0faeb9103684/FIFA_Logo_White_Generic?&io=transform:fill,height:64&quality=75">
+           <a href="index.html">Home </a>
+           <a href="landing.html">Balon D'or</a>
+           <a href="world cup.html">Fifa Store</a>
+           <a href="club.html">Klasemen</a>
+           <a href="kontak.html">Contact us</a>
+       </div></center>
+    <!-- Header -->
+    <header>
+        <h1><p>Temukan Informasi Menarik Terkait Sepak Bola</p></h1>
+    </header>
+    <!-- Main Content -->
+    <main>
+        <!-- Carousel Section -->
+        <div class="container">
+            <h1>Featured Jerseys</h1>
+            <div class="product-grid">
+                <div class="product-card">
+                    <img src="https://store.fifa.com/_next/image?url=https%3A%2F%2Flegends.broadleafcloud.com%2Fapi%2Fasset%2Fcontent%2FJAPAN%2520Y3%2520HOME%25201.jpg%3FcontextRequest%3D%257B%2522forceCatalogForFetch%2522%3Afalse%2C%2522forceFilterByCatalogIncludeInheritance%2522%3Afalse%2C%2522forceFilterByCatalogExcludeInheritance%2522%3Afalse%2C%2522applicationId%2522%3A%252201GPYEXET5B7Y61HW8TB4R0YWE%2522%2C%2522tenantId%2522%3A%2522FIFA%2522%257D&w=384&q=50" alt="Adidas Japan Y-3 2024 Home Jersey">
+                    <p class="product-name">adidas Japan Y-3 2024 Home Jersey - Men's</p>
+                    <p class="product-price">$900.00</p>
+                </div>
+                <div class="product-card">
+                    <img src="https://store.fifa.com/_next/image?url=https%3A%2F%2Flegends.broadleafcloud.com%2Fapi%2Fasset%2Fcontent%2FJAPAN%2520y3%2520Away.jpg%3FcontextRequest%3D%257B%2522forceCatalogForFetch%2522%3Afalse%2C%2522forceFilterByCatalogIncludeInheritance%2522%3Afalse%2C%2522forceFilterByCatalogExcludeInheritance%2522%3Afalse%2C%2522applicationId%2522%3A%252201GPYEXET5B7Y61HW8TB4R0YWE%2522%2C%2522tenantId%2522%3A%2522FIFA%2522%257D&w=384&q=50" alt="Adidas Japan Y-3 2024 Away Jersey">
+                    <p class="product-name">adidas Japan Y-3 2024 Away Jersey - Men's</p>
+                    <p class="product-price">$900.00</p>
+                </div>
+                <div class="product-card">
+                    <img src="https://store.fifa.com/_next/image?url=https%3A%2F%2Flegends.broadleafcloud.com%2Fapi%2Fasset%2Fcontent%2FMEX%2520PRE%2520MATCH%2520FRONT.png%3FcontextRequest%3D%257B%2522forceCatalogForFetch%2522%3Afalse%2C%2522forceFilterByCatalogIncludeInheritance%2522%3Afalse%2C%2522forceFilterByCatalogExcludeInheritance%2522%3Afalse%2C%2522applicationId%2522%3A%252201GPYEXET5B7Y61HW8TB4R0YWE%2522%2C%2522tenantId%2522%3A%2522FIFA%2522%257D&w=384&q=50" alt="Adidas Mexico 2024 Warm Up Jersey">
+                    <p class="product-name">adidas Mexico 2024 Warm Up Jersey - Men's</p>
+                    <p class="product-price">$100.00</p>
+                </div>
+                <div class="product-card">
+                    <img src="https://store.fifa.com/_next/image?url=https%3A%2F%2Flegends.broadleafcloud.com%2Fapi%2Fasset%2Fcontent%2FALGERIA%25201-1.jpg%3FcontextRequest%3D%257B%2522forceCatalogForFetch%2522%3Afalse%2C%2522forceFilterByCatalogIncludeInheritance%2522%3Afalse%2C%2522forceFilterByCatalogExcludeInheritance%2522%3Afalse%2C%2522applicationId%2522%3A%252201GPYEXET5B7Y61HW8TB4R0YWE%2522%2C%2522tenantId%2522%3A%2522FIFA%2522%257D&w=384&q=50" alt="Adidas Algeria 2024 Jersey">
+                    <p class="product-name">adidas Algeria 2024 Jersey - Men's</p>
+                    <p class="product-price">$200.00</p>
+                </div>
+            </div>
+        </div>
+        </section>
+
+        <section> <div class="container">
+            <h1>Produk Piala</h1>
+            <div class="product-grid">
+                <!-- Item 1 -->
+                <div class="product-item">
+                    <img src="https://store.fifa.com/_next/image?url=https%3A%2F%2Flegends.broadleafcloud.com%2Fapi%2Fasset%2Fcontent%2FFIFACL0101_2.jpg%3FcontextRequest%3D%257B%2522forceCatalogForFetch%2522%3Afalse%2C%2522forceFilterByCatalogIncludeInheritance%2522%3Afalse%2C%2522forceFilterByCatalogExcludeInheritance%2522%3Afalse%2C%2522applicationId%2522%3A%252201GPYEXET5B7Y61HW8TB4R0YWE%2522%2C%2522tenantId%2522%3A%2522FIFA%2522%257D&w=384&q=50" alt="150mm Licensed FIFA World Cup Replica Trophy">
+                    <h3>150mm Licensed FIFA World Cup™ Replica Trophy</h3>
+                    <p>$185.00</p>
+                </div>
+                <!-- Item 2 -->
+                <div class="product-item">
+                    <img src="https://store.fifa.com/_next/image?url=https%3A%2F%2Flegends.broadleafcloud.com%2Fapi%2Fasset%2Fcontent%2FFIFACL0085_2.jpg%3FcontextRequest%3D%257B%2522forceCatalogForFetch%2522%3Afalse%2C%2522forceFilterByCatalogIncludeInheritance%2522%3Afalse%2C%2522forceFilterByCatalogExcludeInheritance%2522%3Afalse%2C%2522applicationId%2522%3A%252201GPYEXET5B7Y61HW8TB4R0YWE%2522%2C%2522tenantId%2522%3A%2522FIFA%2522%257D&w=384&q=50" alt="150mm Licensed Replica Jules Rimet Trophy">
+                    <h3>150mm Licensed Replica Jules Rimet Trophy</h3>
+                    <p>$185.00</p>
+                </div>
+                <!-- Item 3 -->
+                <div class="product-item">
+                    <img src="https://store.fifa.com/_next/image?url=https%3A%2F%2Flegends.broadleafcloud.com%2Fapi%2Fasset%2Fcontent%2FFIFACL010600_A.jpg%3FcontextRequest%3D%257B%2522forceCatalogForFetch%2522%3Afalse%2C%2522forceFilterByCatalogIncludeInheritance%2522%3Afalse%2C%2522forceFilterByCatalogExcludeInheritance%2522%3Afalse%2C%2522applicationId%2522%3A%252201GPYEXET5B7Y61HW8TB4R0YWE%2522%2C%2522tenantId%2522%3A%2522FIFA%2522%257D&w=384&q=50" alt="70mm Argentina FIFA World Cup Champions Replica Trophy">
+                    <h3>70mm Argentina FIFA World Cup™ Champions Replica Trophy</h3>
+                    <p>$70.00</p>
+                </div>
+                <!-- Item 4 -->
+                <div class="product-item">
+                    <img src="https://store.fifa.com/_next/image?url=https%3A%2F%2Flegends.broadleafcloud.com%2Fapi%2Fasset%2Fcontent%2FFIFACL010300_A.jpg%3FcontextRequest%3D%257B%2522forceCatalogForFetch%2522%3Afalse%2C%2522forceFilterByCatalogIncludeInheritance%2522%3Afalse%2C%2522forceFilterByCatalogExcludeInheritance%2522%3Afalse%2C%2522applicationId%2522%3A%252201GPYEXET5B7Y61HW8TB4R0YWE%2522%2C%2522tenantId%2522%3A%2522FIFA%2522%257D&w=384&q=50" alt="70mm Brazil FIFA World Cup Champions Replica Trophy">
+                    <h3>70mm Brazil FIFA World Cup™ Champions Replica Trophy</h3>
+                    <p>$85.00</p>
+                </div>
+            </div>
+        </div></section>
+
+     
+       
+    </main>
+
+    <!-- Footer -->
+    <footer>
+        <p>&copy; 2024 - Bernardinus Christian</p>
+    </footer>
+
+    <!-- JavaScript Carousel -->
+    <script>
+        let currentSlide = 0;
+        const slides = document.querySelectorAll('.carousel-image');
+
+        function showSlide(index) {
+            const totalSlides = slides.length;
+            currentSlide = (index + totalSlides) % totalSlides;
+            document.getElementById('carouselImages').style.transform = `translateX(-${currentSlide * 100}%)`;
+        }
+
+        function nextSlide() {
+            showSlide(currentSlide + 1);
+        }
+
+        function prevSlide() {
+            showSlide(currentSlide - 1);
+        }
+    </script>
+</body>
+</html>

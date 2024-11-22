@@ -1,0 +1,288 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Landing Page</title>
+    <link rel="stylesheet" href="style1.css">
+    <style>
+        /* CSS Dasar */
+        body, html {
+            margin: 0;
+            padding: 0;
+            font-family: Arial, sans-serif;
+            text-align: center;
+        }
+
+        header, footer {
+            background-color: #333;
+            color: #fff;
+            padding: 20px 0;
+        }
+
+        main {
+            padding: 20px;
+        }
+
+        /* Carousel */
+        .carousel {
+            position: relative;
+            width: 85%;
+            max-width: 600px;
+            margin: 0 auto;
+            overflow: hidden;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+            background-position: center;
+        }
+
+        .carousel-images {
+            display: flex;
+            transition: transform 0.5s ease;
+            background-position: center;
+        }
+
+        .carousel-image {
+            min-width: 100%;
+            height: 500px;
+            background-size: cover;
+            background-position: center;
+        }
+
+        .carousel-buttons {
+            position: absolute;
+            top: 50%;
+            width: 100%;
+            display: flex;
+            justify-content: space-between;
+            transform: translateY(-50%);
+        }
+
+        .carousel-button {
+            background-color: rgba(0, 0, 0, 0.5);
+            color: honeydew;
+            border: none;
+            padding: 10px;
+            cursor: pointer;
+        }
+
+        .carousel-button:hover {
+            background-color: rgba(0, 0, 0, 0.8);
+        }
+        /* CARD */
+        .card {
+          box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+          transition: 0.3s;
+          width: 95%;
+        }
+
+        .card:hover {
+          box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+        }
+
+        .container {
+          padding: 2px 16px;
+        }
+        /* Styling untuk navbar */
+        .navbar {
+         
+          overflow: hidden;
+        }
+
+        .navbar a {
+          float: left;
+          display: block;
+          color: #f2f2f2;
+          text-align: center;
+          padding: 14px 16px;
+          text-decoration: none;
+        }
+
+        .navbar a:hover {
+          background-color: navajowhite;
+          color: black;
+        }
+
+        .navbar a {
+          display: block;
+          color: #f2f2f2;
+          text-align: center;
+          padding: 14px 16px;
+          text-decoration: none;
+        }
+
+        .navbar a:hover {
+          background-color: #ddd;
+          color: black;
+        }
+        .navbar {
+          background-color: cornflowerblue;
+          overflow: hidden;
+          display: flex;
+          justify-content:left;
+          position: fixed; /* Agar navbar tetap di atas saat scroll */
+          top: 0; /* Menempel di bagian atas */
+          width: 100%; /* Lebar penuh layar */
+          z-index: 1000; /* Di atas elemen lain */
+        }
+
+        /* Memberi ruang agar konten tidak tertutup oleh navbar */
+        body {
+          margin-top: 50px;
+        }
+
+        .navbar a {
+          display: block;
+          color: #f2f2f2;
+          text-align: center;
+          padding: 14px 16px;
+          text-decoration: none;
+        }
+
+        .navbar a:hover {
+          background-color: #ddd;
+          color: black;
+        }
+
+    </style>
+</head>
+<body>
+   <center> 
+        
+       <div class="navbar">
+            <img src="https://digitalhub.fifa.com/transform/befe3a64-328b-453c-8b58-0faeb9103684/FIFA_Logo_White_Generic?&io=transform:fill,height:64&quality=75">
+        <a href="index.html">Home </a>
+        <a href="landing.html">Balon D'or</a>
+        <a href="world cup.html">Fifa store </a>
+        <a href="club.html">Klasemen</a>
+        <a href="kontak.html">Contact us</a>
+       </div></center>
+    <!-- Header -->
+    <header>
+        <h1><p>Temukan Informasi Menarik Terkait Sepak Bola</p></h1>
+    </header>
+<center><b><h1>Klasemen group Zona Asia </b></h1></center>
+    <!-- Main Content -->
+    <main>
+        <!-- Carousel Section -->
+        <section>
+            <!DOCTYPE html>
+            <html lang="en">
+            <head>
+                <meta charset="UTF-8">
+                <meta name="viewport" content="width=device-width, initial-scale=1.0">
+                <title>Group C</title>
+                <link rel="stylesheet" href="styles.css">
+            </head>
+            <body>
+                <div class="container">
+                    <h1>Klasemen Grup</h1>
+                    <table>
+                        <thead>
+                            <tr>
+                                <th>No</th>
+                                <th>Tim</th>
+                                <th>M</th>
+                                <th>M</th>
+                                <th>S</th>
+                                <th>K</th>
+                                <th>SG</th>
+                                <th>Poin</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>1</td>
+                                <td>Jepang</td>
+                                <td>6</td>
+                                <td>5</td>
+                                <td>1</td>
+                                <td>0</td>
+                                <td>(22-2)</td>
+                                <td>16</td>
+                            </tr>
+                            <tr>
+                                <td>2</td>
+                                <td>Australia</td>
+                                <td>6</td>
+                                <td>1</td>
+                                <td>3</td>
+                                <td>1</td>
+                                <td>(6-5)</td>
+                                <td>7</td>
+                            </tr>
+                            <tr>
+                                <td>3</td>
+                                <td class="highlight">INDONESIA</td>
+                                <td>6</td>
+                                <td>1</td>
+                                <td>3</td>
+                                <td>2</td>
+                                <td>(6-9)</td>
+                                <td>6</td>
+                            </tr>
+                            <tr>
+                                <td>4</td>
+                                <td>Arab Saudi</td>
+                                <td>6</td>
+                                <td>1</td>
+                                <td>3</td>
+                                <td>2</td>
+                                <td>(3-6)</td>
+                                <td>6</td>
+                            </tr>
+                            <tr>
+                                <td>5</td>
+                                <td>Bahrain</td>
+                                <td>6</td>
+                                <td>1</td>
+                                <td>3</td>
+                                <td>2</td>
+                                <td>(5-10)</td>
+                                <td>6</td>
+                            </tr>
+                            <tr>
+                                <td>6</td>
+                                <td>China</td>
+                                <td>6</td>
+                                <td>2</td>
+                                <td>0</td>
+                                <td>4</td>
+                                <td>(6-16)</td>
+                                <td>6</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </body>
+            </html>
+
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer>
+        <p>&copy; 2024 - Bernardinus Christian</p>
+    </footer>
+
+    <!-- JavaScript Carousel -->
+    <script>
+        let currentSlide = 0;
+        const slides = document.querySelectorAll('.carousel-image');
+
+        function showSlide(index) {
+            const totalSlides = slides.length;
+            currentSlide = (index + totalSlides) % totalSlides;
+            document.getElementById('carouselImages').style.transform = `translateX(-${currentSlide * 100}%)`;
+        }
+
+        function nextSlide() {
+            showSlide(currentSlide + 1);
+        }
+
+        function prevSlide() {
+            showSlide(currentSlide - 1);
+        }
+    </script>
+</body>
+</html>
