@@ -1,0 +1,257 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Landing Page</title>
+    <style>
+        /* CSS Dasar */
+        body, html {
+            margin: 0;
+            padding: 0;
+            font-family: Arial, sans-serif;
+            text-align: center;
+        }
+
+        header, footer {
+            padding: 20px 0;
+            background-color: darkblue;
+        }
+
+        main {
+            padding: 20px;
+        }
+
+        /* Carousel */
+        .carousel {
+            position: relative;
+            width: 85%;
+            max-width: 600px;
+            margin: 0 auto;
+            overflow: hidden;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+            background-position: center;
+        }
+
+        .carousel-images {
+            display: flex;
+            transition: transform 0.5s ease;
+            background-position: center;
+        }
+
+        .carousel-image {
+            min-width: 100%;
+            height: 500px;
+            background-size: cover;
+            background-position: center;
+        }
+
+        .carousel-buttons {
+            position: absolute;
+            top: 50%;
+            width: 100%;
+            display: flex;
+            justify-content: space-between;
+            transform: translateY(-50%);
+        }
+
+        .carousel-button {
+            background-color: rgba(0, 0, 0, 0.5);
+            color: #fff;
+            border: none;
+            padding: 10px;
+            cursor: pointer;
+        }
+
+        .carousel-button:hover {
+            background-color: rgba(0, 0, 0, 0.8);
+        }
+        /* CARD */
+        .card {
+          box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+          transition: 0.3s;
+          width: 95%;
+        }
+
+        .card:hover {
+          box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+        }
+
+        .container {
+          padding: 2px 16px;
+        }
+        /* Styling untuk navbar */
+        .navbar {
+          background-color:cadetblue;
+          overflow: hidden;
+        }
+
+        .navbar a {
+          float: left;
+          display: block;
+          text-align: center;
+          padding: 14px 16px;
+          text-decoration: none;
+        }
+
+        .navbar a:hover {
+          background-color: whitesmoke;
+          color: black;
+        }
+    
+        
+
+        .navbar a {
+          display: block;
+          color: #f2f2f2;
+          text-align: center;
+          padding: 14px 16px;
+          text-decoration: none;
+        }
+
+        .navbar a:hover {
+          background-color: #ddd;
+          color: black;
+        }
+        .navbar {
+          background-color: cornflowerblue;
+          overflow: hidden;
+          display: flex;
+          justify-content: left; /* Untuk  navbar jadi di kiri  */
+          position: fixed; /* Agar navbar tetap di atas saat scroll */
+          top: 0; /* Menempel di bagian atas */
+          width: 100%; /* Lebar penuh layar */
+          z-index: 1000; /* Di atas elemen lain */
+        }
+
+        /* Memberi ruang agar konten tidak tertutup oleh navbar */
+        body {
+          margin-top: 50px;
+        }
+
+        .navbar a {
+          display: block;
+          text-align: center;
+          padding: 14px 16px;
+          text-decoration: none;
+        }
+
+        
+
+    </style>
+</head>
+<body>
+   <center> 
+        
+       <div class="navbar">
+          <img src="https://digitalhub.fifa.com/transform/befe3a64-328b-453c-8b58-0faeb9103684/FIFA_Logo_White_Generic?&io=transform:fill,height:64&quality=75">
+         <a href="index.html">Home </a>
+         <a href="landing.html">Balon D'or</a>
+         <a href="world cup.html">Fifa Store</a>
+         <a href="club.html">Klasemen</a>
+         <a href="kontak.html">Contact us</a>
+        
+        
+      </div></center>
+    <!-- Header -->
+    <header>
+        <h1><p>Temukan Informasi Menarik Terkait Sepak Bola</p></h1>
+    </header>
+<center><b><h1>Balon D'or 2024</b></h1></center>
+    <!-- Main Content -->
+    <main>
+        <!-- Carousel Section -->
+        <section class="carousel" aria-label="Gallery">
+            <div class="carousel-images" id="carouselImages">
+                <div class="carousel-image" style="background-image: url('https://via.placeholder.com/600x300/FF5733/FFFFFF?text=Slide+1');"><h1>Pemenang Balon D'or 2024 </h1>
+                    <h3>Rodrigo Hernández Cascante</h3>
+
+                <div class="card">
+                  <img src="https://img.antaranews.com/cache/1200x800/2024/10/29/Rodri.jpg.webp" alt="Avatar" style="width:115%">
+                  <div class="container">
+                   <Center> <h3><b>Rodrigo Hernández Cascante</b></h3> </Center>
+                    <p>Pemenang Balon D'or 2024</p> 
+                  </div>
+                </div>
+</div>
+                <div class="carousel-image" style="background-image: url('https://via.placeholder.com/600x300/33FF57/FFFFFF?text=Slide+2');"><h1>Kopa Trophy 2024</h1>
+                   <H3> Lamine Yamal Nasraoui Ebana</H3>
+                <div class="card">
+                  <img src="https://img.antaranews.com/cache/1200x800/2024/10/29/yamal.jpg.webp" alt="Avatar" style="width:115%">
+                  <div class="container">
+                    <h4><b>John Doe</b></h4> 
+                    <p>Architect & Engineer</p> 
+                  </div>
+                </div>
+</div>
+                <div class="carousel-image" style="background-image: url('https://via.placeholder.com/600x300/3357FF/FFFFFF?text=Slide+3');"><h2>Gerd Muller Trophy 2024</h2>
+                <b><h3> Kylian Mbappé Lottin</h3></b>
+                <div class="card">
+                  <img src="https://static.promediateknologi.id/crop/0x0:0x0/750x500/webp/photo/p1/440/2024/05/29/IMG_20240529_075001_700_x_465_piksel-1230736688.jpg" alt="Avatar" style="width:115%">
+                  <div class="container">
+                    <h4><b>John Doe</b></h4> 
+                    <p>Architect & Engineer</p> 
+                  </div>
+                </div>
+
+                
+</div>
+                                <div class="carousel-image" style="background-image: url('https://via.placeholder.com/600x300/3357FF/FFFFFF?text=Slide+3');"><h1>Gerd muller Trophy 2024</h1>
+                                    <h3><b>Harry Edward Kane MBE</h3></b>
+                                <div class="card">
+                                  <img src="https://cdn0-production-images-kly.akamaized.net/Fu_GXJHEfkRnOjOWxLrIIZjBeIs=/1280x720/smart/filters:quality(75):strip_icc():format(webp)/kly-media-production/medias/4983795/original/012926300_1730162461-000_36KZ3AE.jpg" alt="Avatar" style="width:123%">
+                                  <div class="container">
+                            
+                                    <p>Kopa Thropy adalah penghargaan sepak bola asosiasi yang diberikan kepada pemain dengan kinerja terbaik di seluruh dunia yang berusia di bawah 21 tahun dalam upacara bersama dengan Ballon d'Or. </p> 
+                                  </div>
+                                </div>
+
+
+                </div>
+                                <div class="carousel-image" style="background-image: url('https://via.placeholder.com/600x300/3357FF/FFFFFF?text=Slide+3');"><h1>Yashin Trophy 2024</h1>
+                                 <b> <h3>Damián Emiliano Martínez Romero</h3> </b>
+                                <div class="card">
+                                  <img src="https://akcdn.detik.net.id/community/media/visual/2024/10/29/fbl-award-ballon-dor-2024.jpeg?w=700&q=90" alt="Avatar" style="width:118%">
+                                  <div class="container">
+                                   
+                                    <p>Yashin Trophy adalah penghargaan sepak bola asosiasi yang diberikan setiap tahun oleh France Football kepada penjaga gawang dengan kinerja terbaik.</p> 
+                                  </div>
+                                </div>
+
+
+                </div>
+            </div>
+            <div class="carousel-buttons">
+                <button class="carousel-button" onclick="prevSlide()">&#10094;</button>
+                <button class="carousel-button" onclick="nextSlide()">&#10095;</button>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer>
+        <p>&copy; 2024 - Bernardinus Christian</p>
+    </footer>
+
+    <!-- JavaScript Carousel -->
+    <script>
+        let currentSlide = 0;
+        const slides = document.querySelectorAll('.carousel-image');
+
+        function showSlide(index) {
+            const totalSlides = slides.length;
+            currentSlide = (index + totalSlides) % totalSlides;
+            document.getElementById('carouselImages').style.transform = `translateX(-${currentSlide * 100}%)`;
+        }
+
+        function nextSlide() {
+            showSlide(currentSlide + 1);
+        }
+
+        function prevSlide() {
+            showSlide(currentSlide - 1);
+        }
+    </script>
+</body>
+</html>
